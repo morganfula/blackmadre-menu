@@ -5,4 +5,8 @@
 
 @import '../assets/fonts/webfonts/stylesheet.css';
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ul {
+  li {
+    text-align: right;
+  }
+}
