@@ -1,9 +1,9 @@
 body {
   font-family: 'eesti';
   font-size: 16px;
-  background: #FDFDFD;
+  background: #fdfdfd;
+  font-family: 'Montserrat', sans-serif;
 }
-
 
 .container {
   padding: 0 32px;
@@ -11,12 +11,8 @@ body {
   width: 100%;
 }
 
-
 @media (max-width: 750px) {
-
   .container {
     padding: 0 24px;
   }
-
 }
-
