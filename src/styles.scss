@@ -9,6 +9,18 @@ body {
   background: black;
 }
 
+#cursor {
+  display: block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: white;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 ul {
   li {
     text-align: right;
@@ -20,7 +32,7 @@ ul {
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: white;
-      transition: transform 300ms ease-in-out;
+      transition: all 300ms ease-in-out;
 
       transform: translate3D(0px, 0, 0);
     }
@@ -28,6 +40,7 @@ ul {
     &:hover {
       span {
         color: white;
+        -webkit-text-fill-color: white;
         transform: translate3D(-100px, 0, 0);
       }
     }

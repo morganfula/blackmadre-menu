@@ -1,5 +1,14 @@
-// here you put all the js you want.
-import Navbar from "./js/navbar.js";
+const cursor = document.getElementById('cursor');
 
-const navbar = new Navbar()
+console.log(cursor);
 
+document.body.addEventListener('mousemove', (e) => {
+  console.log(e);
+
+  const coord = {
+    x: e.clientX,
+    y: e.clientY,
+  };
+
+  cursor.style.transform = `translate3D(${coord.x}px, ${coord.y}px, 0)`;
+});
