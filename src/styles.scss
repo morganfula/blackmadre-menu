@@ -5,8 +5,31 @@
 
 @import '../assets/fonts/webfonts/stylesheet.css';
 
+body {
+  background: black;
+}
+
 ul {
   li {
     text-align: right;
+    cursor: pointer;
+
+    span {
+      display: block;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: white;
+      transition: transform 300ms ease-in-out;
+
+      transform: translate3D(0px, 0, 0);
+    }
+
+    &:hover {
+      span {
+        color: white;
+        transform: translate3D(-100px, 0, 0);
+      }
+    }
   }
 }
